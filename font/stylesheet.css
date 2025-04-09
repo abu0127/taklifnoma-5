@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MIXONE';
+    src: url('MIXONERegular.woff2') format('woff2'),
+        url('MIXONERegular.woff') format('woff'),
+        url('MIXONERegular.svg#MIXONERegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
