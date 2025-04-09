@@ -54,7 +54,7 @@ function main() {
 
 
               setTimeout(() => {
-                $('.line-1').addClass('line-show')
+                $('#line-1-1').addClass('line-show')
               }, 700)
 
               setTimeout(() => {
@@ -70,12 +70,20 @@ function main() {
               }, 1700)
 
               setTimeout(() => {
-                $('.line').addClass('line-show')
+                $('#line-1-2').addClass('line-show')
               }, 2000)
 
               setTimeout(() => {
                 $('.about').text(about).addClass('show')
               }, 2500);
+
+              setTimeout(() => {
+                $('#down-1').addClass('show')
+              }, 3500);
+
+              // setTimeout(() => {
+              //   $('#down-1').addClass('down-action')
+              // }, 4500);
 
              
             }, 2000)
@@ -86,6 +94,11 @@ function main() {
 
 
           if (index === 1) {
+
+            setTimeout(() => {
+              $('#line-2-1').addClass('line-show');
+            }, 400);
+
 
             setTimeout(() => {
               $('.name-1').text(name).addClass('show');
@@ -99,6 +112,16 @@ function main() {
               $('.name-2').text(name_2).addClass('show');
             }, 1200);
 
+             setTimeout(() => {
+              $('#line-2-2').addClass('line-show');
+            }, 1400);
+
+
+            setTimeout(() => {
+              $('.some-txt').addClass('show');
+            }, 2200);
+
+           
           }
 
 
