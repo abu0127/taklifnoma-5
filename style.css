@@ -1,28 +1,34 @@
-*{ margin: 0;padding: 0; box-sizing: border-box; font-family: 'MIXONERegular';}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MIXONERegular';
+}
 
-:root{
-  --txt-color: #f4f4ff
+:root {
+  --txt-color: #f8f8f8
 }
 
 @font-face {
   font-family: 'MIXONERegular';
   src: url('./font/MIXONERegular.woff2') format('woff2'),
-      url('./font/MIXONERegular.woff') format('woff');
+    url('./font/MIXONERegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-.loader_wrapper{
+.loader_wrapper {
   z-index: 10;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #131313;
-  
+
 }
+
 .bg-wrapper {
   z-index: 1;
   position: fixed;
@@ -30,22 +36,23 @@
   background-size: cover;
   background-position: left center;
   transition: background-position 1.5s ease-in, filter 1.5s ease-in;
-  height: 100vh;
+  height: 100dvh;
   width: 500px;
 
 }
 
 .bg-center {
- background-position: center center;
+  background-position: center center;
   filter: blur(2px) brightness(0.3);
 }
-.container{
+
+.container {
   z-index: 5;
   position: fixed;
   position: relative;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height: 100vh;
+  height: 100dvh;
   max-width: 500px;
 }
 
@@ -63,7 +70,12 @@
   flex-flow: column;
 }
 
-.greet, .who, .about, .some-txt , .down{
+.greet,
+.who,
+.about,
+.some-txt,
+.down,
+.couts-title {
   font-size: 28px;
   text-align: center;
   font-weight: bold;
@@ -73,29 +85,35 @@
   letter-spacing: 3px;
   padding: 0 40px;
 }
-.who{
+
+.who {
   margin-bottom: 30px;
 }
-.some-txt{
+
+.some-txt {
   font-size: 22px;
   margin-top: 60px;
 }
 
-#section-1,#section-2{
+#section-1,
+#section-2,
+#section-3 {
   padding-top: 10vh;
   position: relative;
 }
 
-.about{
+.about {
   font-size: 20px;
   padding: 20px;
   line-height: 30px;
- 
+
 }
 
-.data-container{ width: 100;}
+.data-container {
+  width: 100;
+}
 
-.data-container div{
+.data-container div {
   display: flex;
   justify-content: center;
   font-size: 70px;
@@ -104,25 +122,31 @@
   transition: all 1s ease;
   margin: 0;
 }
-.data-container .month{font-size: 45px;}
 
-.line{
+.data-container .month {
+  font-size: 45px;
+}
+
+.line {
   display: flex;
   justify-content: center;
   height: 0;
-  margin:  0 ;
+  margin: 0;
   overflow: hidden;
   transition: all 1s;
   position: relative;
 }
-.line div{
+
+.line div {
   background: var(--txt-color);
   width: 2px;
   height: 80px;
   transform: translateY(0);
-  
+
 }
-#down-1,#down-2 {
+
+#down-1,
+#down-2 {
   position: absolute;
   font-size: 20px;
   text-align: center;
@@ -130,7 +154,7 @@
   width: 100%;
 }
 
-.name-con{
+.name-con {
   font-size: 30;
   width: 80%;
   height: auto;
@@ -142,39 +166,63 @@
   flex-flow: column;
 
 }
-.name-con div{
+
+.name-con div {
   font-size: 45px;
   transform: translateY(30px);
   opacity: 0;
   letter-spacing: 4px;
 }
-.and{display: flex;}
-.show{animation: show 1s forwards ease;}
 
-.dates{
-  font-size: 35px;
+.and {
+  display: flex;
+}
+
+.show {
+  animation: show 1s forwards ease;
+}
+
+
+.dates {
+  margin: 26px 0;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
   display: flex;
   flex-direction: column;
-  align-items:center ;
+  align-items: center;
 }
-.days , .hours , .minutes{
+
+.days,
+.hours,
+.minutes {
+  transform: translateY(30px);
+  opacity: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-#days, #hours, #minutes{
+
+#days,
+#hours,
+#minutes {
   font-size: 50px;
 }
 
-  @keyframes show{
-    100%{
-      transform: translateY(0);
-      opacity: 1;
-      
-    }
+@keyframes show {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+
   }
-  
-.line-show{ animation: line-show 1s forwards ease;}
+}
+
+.line-show {
+  animation: line-show 1s forwards ease;
+}
+
 @keyframes line-show {
-  100%{
+  100% {
     height: 100px;
     opacity: 1;
   }
@@ -193,51 +241,58 @@
 }
 
 @keyframes mulShdSpin {
+
   0%,
   100% {
-    box-shadow: 0 -3em 0 0.2em, 
-    2em -2em 0 0em, 3em 0 0 -1em, 
-    2em 2em 0 -1em, 0 3em 0 -1em, 
-    -2em 2em 0 -1em, -3em 0 0 -1em, 
-    -2em -2em 0 0;
+    box-shadow: 0 -3em 0 0.2em,
+      2em -2em 0 0em, 3em 0 0 -1em,
+      2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 0;
   }
+
   12.5% {
-    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
-    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
-    -2em 2em 0 -1em, -3em 0 0 -1em, 
-    -2em -2em 0 -1em;
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
   }
+
   25% {
-    box-shadow: 0 -3em 0 -0.5em, 
-    2em -2em 0 0, 3em 0 0 0.2em, 
-    2em 2em 0 0, 0 3em 0 -1em, 
-    -2em 2em 0 -1em, -3em 0 0 -1em, 
-    -2em -2em 0 -1em;
+    box-shadow: 0 -3em 0 -0.5em,
+      2em -2em 0 0, 3em 0 0 0.2em,
+      2em 2em 0 0, 0 3em 0 -1em,
+      -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
   }
+
   37.5% {
     box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
-     3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
-     -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+      3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+      -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
   }
+
   50% {
     box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
-     3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
-     -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+      3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+      -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
   }
+
   62.5% {
     box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
-     3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
-     -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+      -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
   }
+
   75% {
-    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
-    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
-    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
   }
+
   87.5% {
-    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
-    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
-    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
   }
 }
-

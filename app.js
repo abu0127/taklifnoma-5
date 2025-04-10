@@ -124,8 +124,27 @@ function main() {
 
 
           }
+          if (index === 2){
+
+            setTimeout(() => {
+              $('.couts-title').addClass('show');
+            }, 400);
+            
+            setTimeout(() => {
+              $('.days').addClass('show');
+            }, 700);
+
+            setTimeout(() => {
+              $('.hours').addClass('show');
+            }, 900);
+
+            setTimeout(() => {
+              $('.minutes').addClass('show');
+            }, 1200);
 
 
+          }
+          
 
 
 
