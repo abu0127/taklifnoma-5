@@ -142,6 +142,10 @@ function main() {
               $('.minutes').addClass('show');
             }, 1200);
 
+            setTimeout(() => {
+              $('.map').addClass('show');
+            }, 1600);
+
 
           }
           
