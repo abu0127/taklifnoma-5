@@ -181,15 +181,20 @@
 
 
 .name-con div {
-  font-size: 35px;
+  font-size: 26px;
   transform: translateY(30px);
   opacity: 0;
   letter-spacing: 4px;
 }
+.name-con .name-1, .name-con .name-2{
+  font-size: 40px;
+}
 
 .and {
   display: flex;
+
 }
+
 
 .show {
   animation: show 1s forwards ease;

@@ -5,15 +5,15 @@ function main() {
 
   $(document).ready(function () {
 
-    const greet = 'Assalomu alykum'
+    const greet = 'Assalomu aleykum'
     const who = 'Aziz brodar'
     const day = '22';
     const month = 'APREL';
     const year = '25'
     const about = "Soat 18:30 da bulib o'tadigan nikoh oqshomiga taklif etamiz"
-    const name = 'Family'
-    const and = "Of"
-    const name_2 = "Muxammadjonov"
+    const name = 'THE'
+    const and = "MUXAMMADJONOVS"
+    const name_2 = "DAY"
 
     setTimeout(() => {
       loader.style.transition = "all 1s ease"
