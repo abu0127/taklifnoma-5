@@ -44,6 +44,7 @@
 .bg-center {
   background-position: center center;
   filter: blur(2px) brightness(0.3);
+ 
 }
 
 .container {
@@ -54,6 +55,7 @@
   scroll-snap-type: y mandatory;
   height: 100lvh;
   max-width: 500px;
+  box-shadow: inset 1px 1px 25px 5px rgba(0, 0, 0, 0.796);
 }
 
 
@@ -88,7 +90,7 @@
   padding: 0 40px;
 }
 .greet{
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .couts-title{
   margin-top: 10%;
@@ -175,7 +177,7 @@
   margin: 0 auto;
   padding: 0 10px;
   flex-flow: column;
-  margin-top: 10px ;
+  margin-top: 10% ;
 }
 
 .name-con div {
