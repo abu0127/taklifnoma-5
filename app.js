@@ -7,13 +7,13 @@ function main() {
 
     const greet = 'Assalomu alykum'
     const who = 'Aziz brodar'
-    const day = '27';
+    const day = '22';
     const month = 'APREL';
     const year = '25'
-    const about = "Kechasi bulib o'tadigan nikoh ohshomiga taklif etamiz"
-    const name = 'Sardorbek'
-    const and = "&"
-    const name_2 = "Aisha"
+    const about = "Soat 18:30 da bulib o'tadigan nikoh oqshomiga taklif etamiz"
+    const name = 'Family'
+    const and = "Of"
+    const name_2 = "Muxammadjonov"
 
     setTimeout(() => {
       loader.style.transition = "all 1s ease"
@@ -202,7 +202,7 @@ function main() {
     }
 
     // Sana va vaqtni belgilash (masalan, 2025-yil 4-aprel, 15:30)
-    const targetDate = new Date("2025-04-27T19:00:00");
+    const targetDate = new Date("2025-04-22T18:30:00");
     countdown(targetDate);
 
 
