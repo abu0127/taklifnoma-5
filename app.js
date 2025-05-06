@@ -7,12 +7,12 @@ function main() {
 
     const greet = 'Assalomu aleykum'
     const who = 'Aziz brodar'
-    const day = '22';
-    const month = 'APREL';
+    const day = '10';
+    const month = 'MAY';
     const year = '25'
-    const about = "Soat 18:30 da bulib o'tadigan nikoh oqshomiga taklif etamiz"
+    const about = "Soat 18:00 da bulib o'tadigan nikoh oqshomiga taklif etamiz"
     const name = 'THE'
-    const and = "MUXAMMADJONOVS"
+    const and = "RASULOVS"
     const name_2 = "DAY"
 
     setTimeout(() => {
@@ -202,7 +202,7 @@ function main() {
     }
 
     // Sana va vaqtni belgilash (masalan, 2025-yil 4-aprel, 15:30)
-    const targetDate = new Date("2025-04-22T18:30:00");
+    const targetDate = new Date("2025-05-10T18:00:00");
     countdown(targetDate);
 
 
