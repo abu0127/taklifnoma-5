@@ -232,7 +232,7 @@ body{
   font-size: 50px;
 }
 .map{
-  margin: 15% auto;
+  margin: 7% auto;
   border: .4px solid #f8f8f838;
   border-radius: 35px;
   
@@ -243,10 +243,10 @@ body{
   flex-direction: column;
   align-items: center;
   text-decoration: none;color: var(--txt-color);
-  padding: 10px 55px;
+  padding: 7px 55px;
 }
 .map a span{
-  font-size: 28px;
+  font-size: 25px;
   letter-spacing: 3px;
 }
 
@@ -342,7 +342,7 @@ body{
   
   display: flex;
   justify-content: center;
-  margin: 20px;
+  /* margin-bottom: 60px; */
 }
 .builder a{
   text-decoration: none;
